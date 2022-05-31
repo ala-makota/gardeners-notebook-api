@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "623f7f3b3877c0539e9b1b49"
+  },
+  "id": 1,
+  "name": "Syringa meyeri 'Palibin'",
+  "plantType": "shrub",
+  "climateZone": "6",
+  "exposure": "full sun",
+  "waterNeeds": "low",
+  "soilPH": [
+    "alkaline",
+    "neutral"
+  ],
+  "height": 150,
+  "width": 210,
+  "spacing": 180,
+  "floweringTime": [
+    "IV"
+  ],
+  "flowerColor": "#DFB2D0",
+  "img": "https://cdn.galleries.smcloud.net/t/galleries/gf-fm4z-9Kk9-QUrK_lilak-meyera-palibin-664x442.jpg"
+},{
+  "_id": {
+    "$oid": "623f7f943877c0539e9b1b64"
+  },
+  "id": 3,
+  "name": "Clematis 'Emilia Plater'",
+  "plantType": "climber",
+  "climateZone": "5B",
+  "exposure": "full sun",
+  "waterNeeds": "average",
+  "soilPH": [
+    "alkaline",
+    "neutral"
+  ],
+  "height": 300,
+  "width": 180,
+  "spacing": 180,
+  "floweringTime": [
+    "VI",
+    "VII"
+  ],
+  "flowerColor": "#CAD1FD",
+  "img": "https://www.futuregardens.pl/uploads/recovered/2055c5dd9f28b1aa253b02521734963a.jpeg"
+},{
+  "_id": {
+    "$oid": "6240175f3877c0539e9b1b6a"
+  },
+  "id": 2,
+  "name": "Allium 'Globemaster'",
+  "plantType": "bulb",
+  "climateZone": "5",
+  "exposure": "full sun",
+  "waterNeeds": "average",
+  "soilPH": [
+    "acid",
+    "alkaline",
+    "neutral"
+  ],
+  "height": 90,
+  "width": 60,
+  "spacing": 20,
+  "floweringTime": [
+    "V",
+    "VI"
+  ],
+  "flowerColor": "#785BAF",
+  "img": "https://images.squarespace-cdn.com/content/v1/5f9ffe51fbfd7a32fdb48dfd/1628943732658-YR7OXNKO30QR4MSP92LW/Allium-Globemaster_2955-8.jpg"
+},{
+  "_id": {
+    "$oid": "62814aa646f67a4b995db7ec"
+  },
+  "id": 3,
+  "name": "Hydrangea arborescens 'Annabelle'",
+  "plantType": "shrub",
+  "climateZone": "5B",
+  "exposure": "partiall sun",
+  "waterNeeds": "high",
+  "soilPH": [
+    "alkaline",
+    "neutral"
+  ],
+  "height": 150,
+  "width": 180,
+  "spacing": 180,
+  "floweringTime": [
+    "VI",
+    "VII"
+  ],
+  "flowerColor": "#fffff7",
+  "img": "https://static3.roslinka24.pl/pol_pm_HORTENSJA-KRZEWIASTA-ANNABELLE-Hydrangea-P9-22_1.jpg"
+},{
+  "_id": {
+    "$oid": "628412592058f82fe19a6ea6"
+  },
+  "id": 3,
+  "name": "Rosa 'Eden'",
+  "plantType": "climber",
+  "climateZone": "5B",
+  "exposure": "full sun",
+  "waterNeeds": "average",
+  "soilPH": [
+    "alkaline",
+    "neutral",
+    "acid"
+  ],
+  "height": 300,
+  "width": 180,
+  "spacing": 180,
+  "floweringTime": [
+    "VI",
+    "VII",
+    "VIII"
+  ],
+  "flowerColor": "#ffa2c0",
+  "img": "https://rosarium.com.pl/wp-content/uploads/2013/10/Eden-Rose1-1.jpg"
+},{
+  "_id": {
+    "$oid": "6291243f3cedb9b2fc87ec94"
+  },
+  "id": 3,
+  "name": "Hydrangea arborescens 'Annabelle'",
+  "plantType": "shrub",
+  "climateZone": "5B",
+  "exposure": "full sun",
+  "waterNeeds": "high",
+  "soilPH": [
+    "alkaline",
+    "neutral"
+  ],
+  "height": 150,
+  "width": 180,
+  "spacing": 180,
+  "floweringTime": [
+    "VI",
+    "VII"
+  ],
+  "flowerColor": "#fffff7",
+  "img": "https://static3.roslinka24.pl/pol_pm_HORTENSJA-KRZEWIASTA-ANNABELLE-Hydrangea-P9-22_1.jpg"
+},{
+  "_id": {
+    "$oid": "629124773cedb9b2fc87ec95"
+  },
+  "id": 3,
+  "name": "Hydrangea arborescens 'Pink Annabelle'",
+  "plantType": "shrub",
+  "climateZone": "5B",
+  "exposure": "partial sun",
+  "waterNeeds": "high",
+  "soilPH": [
+    "alkaline",
+    "neutral"
+  ],
+  "height": 150,
+  "width": 120,
+  "spacing": 180,
+  "floweringTime": [
+    "VI",
+    "VII",
+    "VIII"
+  ],
+  "flowerColor": "#eeafca",
+  "img": "https://szkolka-szotek.pl/wp-content/uploads/2019/08/L298-hortensja-krzewiasta-pink-annabelle-invincibelle-4.jpg"
+}]
