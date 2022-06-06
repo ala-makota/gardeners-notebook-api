@@ -2,8 +2,9 @@ const express = require("express");
 const cors = require('cors'); 
 const mongo = require("mongodb").MongoClient;
 const app = express();
+const router = express.Router()
 
-
+module.exports = router;
 app.listen(3000, () => console.log("Server ready"));
 
 const url = "mongodb://localhost:27017";
@@ -26,6 +27,7 @@ mongo.connect(
     }
     db = client.db("Gardener-Notebook");
     plants = db.collection("plants");
+    // client.close();
   }
 );
 
@@ -46,8 +48,13 @@ app.use(cors());
 //     })
 // });
 
-app.get("/plants", (req, res) => {
-    plants.find().toArray((err, items) => {
+app.get('/plant/:id',  (req, res) => {
+  const id = parseInt(req.params.id);
+
+  console.log("id", id + "  " + typeof id);
+  
+  var query = { id: id };
+  plants.find(query).toArray((err, items) => {
         if (err) {
         console.error(err)
         res.status(500).json({ err: err })
@@ -55,5 +62,16 @@ app.get("/plants", (req, res) => {
         }
         res.status(200).json(items)
     })
-});
+})
 
+
+app.get('/plants',  (req, res) => {
+  plants.find().toArray((err, items) => {
+        if (err) {
+        console.error(err)
+        res.status(500).json({ err: err })
+        return
+        }
+        res.status(200).json(items)
+    })
+})
