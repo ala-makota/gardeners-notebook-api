@@ -35,18 +35,19 @@ mongo.connect(
 app.use(express.json());
 app.use(cors());
 
-// app.post("/plant", (req, res) => {
-//     const name = req.body.name
-//     plants.insertOne({ name: name }, (err, result) => {
-//         if (err) {
-//         console.error(err)
-//         res.status(500).json({ err: err })
-//         return
-//         }
-//         console.log(result)
-//         res.status(200).json({ ok: true })
-//     })
-// });
+app.post("/plant/add", (req, res, next) => {
+    const plant = req.body
+    plants.insertOne(plant, (err, result) => {
+        if (err) {
+        console.error(err)
+        res.status(500).json({ err: err })
+        return
+        }
+    
+        console.log(result)
+        res.status(200).json({ ok: true })
+    })
+});
 
 app.get('/plant/:id',  (req, res) => {
   const id = parseInt(req.params.id);
