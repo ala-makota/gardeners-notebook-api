@@ -3,7 +3,7 @@ const cors = require('cors');
 const mongo = require("mongodb").MongoClient;
 const app = express();
 const router = express.Router()
-
+var ObjectId = require('mongodb').ObjectID;
 module.exports = router;
 app.listen(3000, () => console.log("Server ready"));
 
@@ -50,11 +50,8 @@ app.post("/plant/add", (req, res, next) => {
 });
 
 app.get('/plant/:id',  (req, res) => {
-  const id = parseInt(req.params.id);
-
-  console.log("id", id + "  " + typeof id);
-  
-  var query = { id: id };
+  let id = req.params.id;
+  var query = {"_id": ObjectId(id) };
   plants.find(query).toArray((err, items) => {
         if (err) {
         console.error(err)
@@ -65,7 +62,22 @@ app.get('/plant/:id',  (req, res) => {
     })
 })
 
-
+app.delete('/plant/:id',  (req, res) => {
+  console.log("del " + req.params);
+  let id = req.params.id;
+  console.log("id AAAAAAAAA " + id +"AAAAAAA");
+  var query = {"_id": ObjectId(id.toString()) };
+  // plants.deleteOne(query)
+  console.log("query " + query);
+  plants.findOneAndDelete(query, (err, deletedObj) => {
+    if (err) {
+        res.status(404).json({status: false, error: "Item not found"});
+    }
+    else {
+        res.status(200).json({status: true, message: "Item successfully deleted"}); 
+    }
+})
+});
 app.get('/plants',  (req, res) => {
   plants.find().toArray((err, items) => {
         if (err) {
